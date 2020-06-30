@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import avatarImg from '../../assets/images/avatar.jpg'
 import StyledAvatar, { StatusIcon, AvatarClip, AvatarImage } from './style';
 
@@ -19,9 +19,12 @@ function Avatar ({
     )
 }
 
-// Avatar.propTypes = {
-
-// }
+Avatar.propTypes = {
+    src: PropTypes.string.isRequired,
+    size: PropTypes.string,
+    status: PropTypes.oneOf(['online', 'offline']),
+    statusIconSize: PropTypes.string
+}
 
 export default Avatar
 

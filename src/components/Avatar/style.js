@@ -1,4 +1,15 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+const circleMixinFn = (color, size = '8px') => css`
+    content: '';
+    display: block;
+    position: absolute;
+    width: ${size};
+    height: ${size};
+    border-radius: 50%;
+    background-color: ${color};
+
+`
 
 const StyledAvatar = styled.div`
     position: relative;
@@ -10,24 +21,18 @@ const StatusIcon = styled.div`
     top: 4px;
 
     &::before{
-        content: '';
-        display: block;
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: #fff;
+        ${({ size }) => circleMixinFn('#fff')};
         transform: scale(2);
     }
 
     &::after{
-        content: '';
-        display: block;
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: ${({ theme }) => theme.green};
+        ${({ theme, status, size }) => {
+        if (status === 'online') {
+            return circleMixinFn(theme.green, size);
+        } else if (status === 'offline') {
+            return circleMixinFn(theme.gray, size);
+        }
+    }};
     }
 `
 
