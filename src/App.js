@@ -1,8 +1,22 @@
+// import React, { useState } from 'react';
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button';
+import useColorSwitch from './hooks/useColorSwitch';
 
-function App() {
+
+function App () {
+
+  // const [color, setColor] = useState('red')
+
+  // const handleClick = () => {
+  //   console.log('this is a button')
+  //   setColor('green')
+  // }
+
+  const [color, handleClick] = useColorSwitch('red','green')
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +32,7 @@ function App() {
         >
           Learn React
         </a>
+        <Button width='500px' onClick={handleClick} label='BUTTON'><p style={{color}}>this is button1</p></Button>
       </header>
     </div>
   );
