@@ -1,10 +1,10 @@
 import React from 'react'
 import Avatar from '.';
-import avatarImg from '../../assets/images/avatar.jpg'
-import '../../story.css'
+import avatarImg from 'assets/images/avatar.jpg'
+import 'story.css'
 
 export default {
-    title: 'Avatar',
+    title: 'UI组件/ Avatar',
     component: Avatar
 }
 

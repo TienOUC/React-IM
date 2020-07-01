@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import avatarImg from '../../assets/images/avatar.jpg'
+import avatarImg from 'assets/images/avatar.jpg'
 import StyledAvatar, { StatusIcon, AvatarClip, AvatarImage } from './style';
 
 function Avatar ({
