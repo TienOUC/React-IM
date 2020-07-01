@@ -1,13 +1,11 @@
 import styled, { css } from 'styled-components'
+import { circle } from 'utils/mixins';
 
 const circleMixinFn = (color, size = '8px') => css`
     content: '';
     display: block;
     position: absolute;
-    width: ${size};
-    height: ${size};
-    border-radius: 50%;
-    background-color: ${color};
+    ${circle(color, size)}
 
 `
 
@@ -21,7 +19,7 @@ const StatusIcon = styled.div`
     top: 4px;
 
     &::before{
-        ${({ size }) => circleMixinFn('#f2f2f4')};
+        ${({ size }) => circleMixinFn('#f1f2f3')};
         transform: scale(2);
     }
 
