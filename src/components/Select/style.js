@@ -15,8 +15,8 @@ const StyledSelect = styled.select`
     outline: none;
     padding-right: 14px;
     font-size: ${({ theme }) => theme.normal};
-    color: ${({ theme})=>theme.grayDark};
+    color: ${({ theme }) => theme.grayDark};
 `
 
-export default StyledSelect 
+export default StyledSelect
 

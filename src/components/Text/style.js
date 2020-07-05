@@ -16,28 +16,28 @@ const typeVariant = {
 
 const sizeVariant = {
     normal: css`
-        color: ${({ theme }) => theme.normal}
+        ${({ theme }) => theme.normal};
     `,
     medium: css`
         ${({ theme }) => theme.medium};
     `,
     large: css`
-        ${(theme) => theme.large}
+        ${({ theme }) => theme.large}
     `,
     xlarge: css`
         ${({ theme }) => theme.xlarge};
     `,
     xxlarge: css`
-        ${(theme) => theme.xxlarge}
+        ${({ theme }) => theme.xxlarge}
     `,
     small: css`
         ${({ theme }) => theme.small};
     `,
     xsmall: css`
-        ${(theme) => theme.xsmall}
+        ${({ theme }) => theme.xsmall}
     `,
     xxsmall: css`
-        ${(theme) => theme.xxsmall}
+        ${({ theme }) => theme.xxsmall}
     `
 }
 

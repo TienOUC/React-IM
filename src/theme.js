@@ -8,6 +8,10 @@ export default {
     gray3: 'rgba(24, 28, 47, .3)',
     grayDark: '#181c2f',
 
+    background: '#ffffff',
+    inactiveColor: 'rgba(41, 47, 76, 0.3)',
+    inactiveColorDark: '#ffffff',
+
     normal: '1.4rem',
     medium: '1.6rem',
     large: '1.8rem',

@@ -4,7 +4,7 @@ to: src/components/<%= name %>/index.js
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import Styled<%= name %> from './style';
+import Styled<%= name %> from './style'
 
 function <%= name %> ({children, ...rest}) {
     return (

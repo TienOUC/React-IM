@@ -17,6 +17,7 @@ const variants = {
     `,
     default: css`
         ${({ theme }) => circle(theme.red, '26px')};
+        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;

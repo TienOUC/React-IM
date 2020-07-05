@@ -16,7 +16,7 @@ export const Secondary = () => {
 }
 
 export const Medium = () => {
-    return <Text type='medium'> medium文本 </Text>
+    return <Text size='medium'> medium文本 </Text>
 }
 
 export const LargeAndBold = () => {
