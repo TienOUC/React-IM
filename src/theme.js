@@ -6,6 +6,8 @@ export default {
     darkPurple: '#292f4c',
     gray2: 'rgba(241, 237, 237, .3)',
     gray3: 'rgba(24, 28, 47, .3)',
+    gray4: '#efece8',
+
     grayDark: '#181c2f',
 
     background: '#ffffff',
