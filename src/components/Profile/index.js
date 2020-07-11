@@ -44,7 +44,7 @@ function Profile ({ children, ...rest }) {
                     margin-bottom: 26px;
                 `}
             >
-                前段小白，努力让自己在前段的路上走的再远一些{' '}
+                前端小白，努力让自己在前端的路上走的再远一些{' '}
                 <Emoji label='fist'> ✊ </Emoji>
             </Paragraph>
             <SocialLinks>
