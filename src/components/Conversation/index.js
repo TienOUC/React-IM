@@ -13,7 +13,7 @@ function Conversation ({ children, ...rest }) {
         <StyledConversation {...rest}>
             <TitleBar />
             <Conversations>
-                <ChatBubble time='昨天 下午14:26'> Hi, 小年，忙什么呢？ </ChatBubble>
+                <ChatBubble time='昨天 下午14:26'> Hi, 小宇，忙什么呢？ </ChatBubble>
                 <MyChatBubble time='昨天 下午14:28'> 忙着写Bug呢 </MyChatBubble>
                 <ChatBubble time='昨天 下午14:38'>
                     <VoiceMessage time='01:15'/>

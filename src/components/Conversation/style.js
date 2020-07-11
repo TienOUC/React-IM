@@ -18,6 +18,7 @@ const Conversations = styled.div`
 
 const MyChatBubble = styled(ChatBubble).attrs({ type: 'mine' })`
     align-self: flex-end;
+    margin-right: 30px;
 `
 
 const StyledConversation = styled.div`
