@@ -6,7 +6,7 @@ export default {
     title: 'UI组件/ Emoji',
     component: Emoji
 }
-
+/* eslint-disable jsx-a11y/accessible-emoji */
 export const Default = () => {
     return (
         <div>
