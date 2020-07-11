@@ -27,3 +27,11 @@ export const WithAffix = () => {
         </div>
     )
 }
+
+export const InputTextWithLabel = () => {
+    return <Input.Text label='Name' />
+}
+
+export const InputTextWithoutLabel = () => {
+    return <Input.Text />
+}

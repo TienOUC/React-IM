@@ -18,3 +18,12 @@ export const Default = () => {
     )
 }
 
+export const FormSelect = () => {
+    return (
+        <Select type='form'>
+            <Option>Option A</Option>
+            <Option>Option B</Option>
+            <Option>Option C</Option>
+        </Select>
+    )
+}
