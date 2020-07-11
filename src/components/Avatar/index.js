@@ -11,7 +11,7 @@ function Avatar ({
 }) {
     return (
         <StyledAvatar>
-            {status && <StatusIcon status={status} size={statusIconSize}></StatusIcon>}
+            {status && (<StatusIcon status={status} size={statusIconSize}></StatusIcon>)}
             <AvatarClip size={size}>
                 <AvatarImage src={avatarImg} />
             </AvatarClip>

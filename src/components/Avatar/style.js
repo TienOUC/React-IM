@@ -19,7 +19,7 @@ const StatusIcon = styled.div`
     top: 4px;
 
     &::before{
-        ${({ size }) => circleMixinFn('#f1f2f3')};
+        ${({ size }) => circleMixinFn('#f1f2f3', size)};
         transform: scale(2);
     }
 
