@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import StyledProfile, { SocialLinks, ContactSection, AlbumSection, AlbumTitle, Album, Photo, CloseIcon } from './style'
@@ -14,28 +13,59 @@ import Text from 'components/Text'
 import paper1 from 'assets/images/paper-1.jpg'
 import paper2 from 'assets/images/paper-2.jpg'
 import paper3 from 'assets/images/paper-3.jpg'
-import {ReactComponent as Cross} from 'assets/icons/cross.svg'
+import { ReactComponent as Cross } from 'assets/icons/cross.svg'
+import Button from 'components/Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPen } from '@fortawesome/free-solid-svg-icons'
 
-function Profile ({ children, ...rest }) {
+function Profile ({
+    showEditBtn,
+    showCloseIcon = true,
+    onEdit,
+    status,
+    children,
+    ...rest
+}) {
     return (
         <StyledProfile {...rest}>
-            <CloseIcon icon={Cross}/>
+            {showCloseIcon && <CloseIcon icon={Cross} />}
             <Avatar
                 css={`
-                margin: 26px 0;
+                    margin: 26px 0;
+                    grid-area: 1 / 1 / 3 / 2;
                 `}
                 src={avatarImg}
                 size='160px'
-                status='online'
+                status={status}
                 statusIconSize='25px'
             />
+            {showEditBtn && (
+                <Button
+                    size='52px'
+                    onClick={onEdit}
+                    css={`
+                        grid-area: 1 / 1 / 3 / 2;
+                        align-self: end;
+                        margin-left: 100px;
+                        z-index: 10;
+                    `}
+                >
+                    <FontAwesomeIcon
+                        css={`
+                            font-size: 24px;
+                            color: #fff;
+                        `}
+                        icon={faPen}
+                    />
+                </Button>
+            )}
             <Paragraph
                 size='xlarge'
                 css={`
                     margin-bottom: 12px;
                 `}
             >
-                徐凤年
+                林蛋大
             </Paragraph>
             <Paragraph
                 size='medium'
@@ -55,16 +85,16 @@ function Profile ({ children, ...rest }) {
                 <Emoji label='fist'> ✊ </Emoji>
             </Paragraph>
             <SocialLinks>
-                <Icon.Socail
+                <Icon.Social
                     icon={faWeibo}
                     bgColor='#f06767'
                     href='http://www.weibo.com'
                 />
-                <Icon.Socail
+                <Icon.Social
                     icon={faGithub}
-                    bgColor='#000000'
+                    bgColor='#000'
                 />
-                <Icon.Socail
+                <Icon.Social
                     icon={faLinkedin}
                     bgColor='#2483c0'
                 />

@@ -18,7 +18,7 @@ function Icon ({
     )
 }
 
-Icon.Socail = SocialIcon
+Icon.Social = SocialIcon
 
 Icon.propTypes = {
     icon: PropTypes.element,

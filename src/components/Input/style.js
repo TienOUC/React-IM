@@ -11,7 +11,7 @@ const StyledInput = styled.input`
     font-size: ${({ theme }) => theme.medium};
     display: block;
     &::placeholder{
-        color: ${({ theme})=>theme.gray3};
+        color: ${({ theme }) => theme.gray3};
     }
 `
 

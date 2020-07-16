@@ -7,10 +7,11 @@ function Avatar ({
     src,
     size = '48px',
     status,
-    statusIconSize = '8px'
+    statusIconSize = '8px',
+    ...rest
 }) {
     return (
-        <StyledAvatar>
+        <StyledAvatar {...rest}>
             {status && (<StatusIcon status={status} size={statusIconSize}></StatusIcon>)}
             <AvatarClip size={size}>
                 <AvatarImage src={avatarImg} />
