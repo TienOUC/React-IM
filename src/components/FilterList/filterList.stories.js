@@ -1,4 +1,3 @@
-
 import React from 'react'
 import FilterList from '.'
 
@@ -8,6 +7,6 @@ export default {
 }
 
 export const Default = () => {
-    return <FilterList> 此处添加 children list </FilterList>
+    return <FilterList options={['新添加优先', '按姓名排序']}> 此处是 children list </FilterList>
 }
 

@@ -24,7 +24,7 @@ function FilterList ({
                     <Filter.Filters label='列表排序'>
                         <Select>
                             {options.map((option, index) => (
-                                <Option key={index}>{options}</Option>
+                                <Option key={index}>{option}</Option>
                             ))}
                         </Select>
                     </Filter.Filters>
