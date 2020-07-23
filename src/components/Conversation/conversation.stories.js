@@ -8,6 +8,10 @@ export default {
 }
 
 export const Default = () => {
-    return <Conversation />
+    return (
+        <div style={{ width: '90%', margin: '0 auto' }} >
+            <Conversation />
+        </div >
+    )
 }
 

@@ -48,10 +48,11 @@ const Photo = styled.img`
     height: 76px;
     object-fit: cover;
 `
-const CloseIcon = styled(Icon).attrs({ opacity: 0.3 })`
+const CloseIcon = styled(Icon).attrs({ opacity: 0.5 })`
     position: absolute;
     right: 30px;
-    top: 30px;
+    top: 40px;
+    transform: scale(.9);
     cursor: pointer;
 `
 

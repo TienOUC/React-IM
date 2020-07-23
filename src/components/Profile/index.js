@@ -79,6 +79,7 @@ function Profile ({
             <Paragraph
                 css={`
                     margin-bottom: 26px;
+                    text-align: center;
                 `}
             >
                 前端小白，努力让自己在前端的路上走更远一些{' '}

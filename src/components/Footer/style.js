@@ -18,7 +18,7 @@ const StyledPopoverContent = styled.div`
 `
 
 const StyledFooter = styled.footer`
-    padding: 12px 30px;
+    padding: 12px 15px;
     width: 100%;
 `
 

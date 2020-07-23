@@ -19,7 +19,7 @@ const Actions = styled.div`
 const StyledTitleBar = styled.div`
     display: grid;
     grid-template-columns: 62px 1fr 112px;
-    padding: 30px;
+    padding: 30px 15px;
     max-height: 110px;
     border-bottom: 1px solid ${({ theme }) => theme.gray4}
 `

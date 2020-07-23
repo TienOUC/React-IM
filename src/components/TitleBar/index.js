@@ -25,8 +25,8 @@ function TitleBar ({ children, ...rest }) {
                 </Paragraph>
             </Title>
             <Actions>
-                <Icon opacity={0.4} icon={Call} />
-                <Icon opacity={0.4} icon={Camera} />
+                <Icon opacity={0.5} icon={Call} />
+                <Icon opacity={0.5} icon={Camera} />
                 <Dropdown
                     content={
                         <>
@@ -43,7 +43,7 @@ function TitleBar ({ children, ...rest }) {
                         </>
                     }
                 >
-                    <Icon opacity={0.4} icon={Options} />
+                    <Icon opacity={0.5} icon={Options} />
                 </Dropdown>
 
             </Actions>

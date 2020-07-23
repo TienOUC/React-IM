@@ -19,26 +19,26 @@ function MessageList ({ children, ...rest }) {
         <StyledMessageList {...rest}>
             {/* 抽离filterList组件 */}
             {/* <Input.Search />
-            <ChatFilter /> */}   
+            <ChatFilter /> */}
             <FilterList
                 options={['最新消息优先', '在线好友优先']}
                 actionLabel='创建会话'
             >
-            <ChatList>
-                {[1, 2, 3, 4, 5, 6].map((_, index) => (
-                    <MessageCard
-                        key={index}
-                        active={index === 3}
-                        replied={index % 3 === 0}
-                        avatarSrc={avatarImg1}
-                        name='楚中天'
-                        avatarStatus='online'
-                        StatusText='在线'
-                        time='3 小时之前'
-                        message='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-                        unreadCount={2}
-                    />
-                ))}
+                <ChatList>
+                    {[1, 2, 3, 4, 5, 6].map((_, index) => (
+                        <MessageCard
+                            key={index}
+                            active={index === 3}
+                            replied={index % 3 === 0}
+                            avatarSrc={avatarImg1}
+                            name='楚中天'
+                            avatarStatus='online'
+                            StatusText='在线'
+                            time='3 小时之前'
+                            message='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+                            unreadCount={2}
+                        />
+                    ))}
                 </ChatList>
             </FilterList>
         </StyledMessageList>

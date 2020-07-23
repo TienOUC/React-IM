@@ -9,7 +9,7 @@ export default {
 
 export const Default = () => {
     return (
-        <div style={{ marginTop: 80 }}>
+        <div style={{ margin: '80px auto', width: '90%' }}>
             <Footer />
         </div>
     )

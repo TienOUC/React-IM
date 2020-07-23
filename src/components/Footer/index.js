@@ -37,7 +37,7 @@ function Footer ({ children, ...rest }) {
                             />
                         </Popover>
                         <Icon icon={MicrphoneIcon} />
-                        <Button size='52px'>
+                        <Button size='42px'>
                             <Icon
                                 icon={PlaneIcon}
                                 color='#fff'

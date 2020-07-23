@@ -7,7 +7,7 @@ const Conversations = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: auto;
     overflow: auto;
     flex: 1;
 
@@ -18,17 +18,17 @@ const Conversations = styled.div`
 
 const MyChatBubble = styled(ChatBubble).attrs({ type: 'mine' })`
     align-self: flex-end;
-    margin-right: 30px;
 `
 
 const StyledConversation = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
+    box-sizing: border-box;
     border: 1px solid ${({ theme }) => theme.gray4};
-    
+    border-radius: 5px;
     & > *:last-child{
-        align-self: end;
+        align-self: center;
     }
 `
 
