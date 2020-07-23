@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import StyledProfile, { SocialLinks, ContactSection, AlbumSection, AlbumTitle, Album, Photo, CloseIcon } from './style'
 import Avatar from 'components/Avatar'
 import 'styled-components/macro'
-import avatarImg from 'assets/images/avatar.jpg'
+import avatarImg2 from 'assets/images/avatar-2.jpg'
 import Paragraph from 'components/Paragraph'
 import Emoji from 'components/Emoji'
 import Icon from 'components/Icon'
@@ -34,7 +34,7 @@ function Profile ({
                     margin: 26px 0;
                     grid-area: 1 / 1 / 3 / 2;
                 `}
-                src={avatarImg}
+                src={avatarImg2}
                 size='160px'
                 status={status}
                 statusIconSize='25px'
@@ -65,7 +65,7 @@ function Profile ({
                     margin-bottom: 12px;
                 `}
             >
-                林蛋大
+                林凌
             </Paragraph>
             <Paragraph
                 size='medium'
@@ -81,8 +81,8 @@ function Profile ({
                     margin-bottom: 26px;
                 `}
             >
-                前端小白，努力让自己在前端的路上走的再远一些{' '}
-                <Emoji label='fist'> ✊ </Emoji>
+                前端小白，努力让自己在前端的路上走更远一些{' '}
+                <Emoji label='fist'> ✊ 💪 💯</Emoji>
             </Paragraph>
             <SocialLinks>
                 <Icon.Social

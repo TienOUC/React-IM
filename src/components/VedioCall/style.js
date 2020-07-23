@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Button from 'components/Button'
 import Avatar from 'components/Avatar'
+import { card } from 'utils/mixins'
 
 const Actions = styled.div`
     grid-area: actions / title;
@@ -15,7 +16,7 @@ const Action = styled(Button).attrs({ size: '64px' })`
     font-size: 32px;
     color: #fff;
     box-shadow: none;
-    background-color: ${({ theme, type }) => type === 'hangoff' ? theme.red2 : theme.grayDark2}
+    background-color: ${({ theme, type }) => type === 'hangoff' ? theme.red2 : theme.grayDark2};
 `
 
 const Self = styled(Avatar)`
@@ -34,6 +35,23 @@ const Minimize = styled(Button)`
     font-size: 46px;
 `
 
+const VideoCallAlert = styled.div`
+    display: grid;
+    grid-template-areas: 
+        'avatar info info'
+        'avatar action icon';
+    row-gap: 5px;
+    column-gap: 10px;
+    align-items: center;
+    width: max-content;
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    border: 1px solid ${({ theme }) => theme.gray4};
+    z-index: 200;
+    ${card()}
+`
+
 const StyledVedioCall = styled.div`
     height: 100%;
     padding: 20px;
@@ -49,4 +67,4 @@ const StyledVedioCall = styled.div`
 `
 
 export default StyledVedioCall
-export { Actions, Action, Self, Minimize }
+export { Actions, Action, Self, Minimize, VideoCallAlert }

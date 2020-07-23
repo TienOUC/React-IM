@@ -4,14 +4,14 @@ import React from 'react'
 import StyledNavBar, { StyledMenuItem, MenuIcon, MenuItems } from './style';
 import Badge from 'components/Badge';
 import Avatar from 'components/Avatar';
-import avatarImg from 'assets/images/avatar.jpg'
+import avatarImg1 from 'assets/images/avatar-1.jpg'
 import { faCommentDots, faUsers, faFolder, faCog, faEllipsisH, faStickyNote } from '@fortawesome/free-solid-svg-icons';
 import 'styled-components/macro'
 
 function NavBar ({ children, ...rest }) {
     return (
         <StyledNavBar {...rest}>
-            <Avatar src={avatarImg} status='online' />
+            <Avatar src={avatarImg1} status='online' />
             <MenuItems>
                 <MenuItem showBadge active icon={faCommentDots} />
                 <MenuItem icon={faUsers} />

@@ -10,7 +10,8 @@ export default {
 export const Default = () => (
     <>
         <Paragraph> This is the first paragraph </Paragraph>
-        <Paragraph> This is the second paragraph </Paragraph>
+        <Paragraph type='secondary'> This is the second paragraph (secondary color) </Paragraph>
+        <Paragraph type='danger'> This is the third paragraph (danger color) </Paragraph>
     </>
 )
 

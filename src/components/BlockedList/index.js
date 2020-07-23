@@ -5,7 +5,7 @@ import Icon from 'components/Icon'
 import Text from 'components/Text'
 import { ReactComponent as ArrowMenuLeft } from 'assets/icons/arrowMenuLeft.svg'
 import 'styled-components/macro'
-import avatarImg from 'assets/images/avatar.jpg'
+import avatarImg1 from 'assets/images/avatar-1.jpg'
 import { ReactComponent as closeCircle } from 'assets/icons/closeCircle.svg'
 
 function BlockedList ({ children, ...rest }) {
@@ -24,7 +24,7 @@ function BlockedList ({ children, ...rest }) {
                 {new Array(8).fill(0).map((_, i) => {
                     return (
                         <ClosableAvatar key={i}>
-                            <BlockedAvatar size='105px' src={avatarImg} />
+                            <BlockedAvatar size='105px' src={avatarImg1} />
                             <CloseIcon width={46} height={51} icon={closeCircle} />
                             <BlockedName>楚中天</BlockedName>
                         </ClosableAvatar>

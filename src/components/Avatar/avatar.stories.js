@@ -2,7 +2,6 @@ import React from 'react'
 import Avatar from '.';
 import avatarImg from 'assets/images/avatar.jpg'
 
-
 export default {
     title: 'UI组件/ Avatar',
     component: Avatar

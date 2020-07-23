@@ -9,6 +9,7 @@ export default {
     gray3: 'rgba(24, 28, 47, .3)',
     gray4: '#efece8',
     gray5: '#d8d8d8',
+    grediantGray: 'linear-gradient(119.19deg, #ffffff 0%, #f8f8f8 65.34%, #ffffff 100%)',
     grayDark: '#181c2f',
     grayDark2: 'rgba(33, 33, 33, .58)',
 

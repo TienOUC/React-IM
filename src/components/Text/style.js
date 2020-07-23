@@ -10,7 +10,7 @@ const typeVariant = {
         opacity: 0.3;
     `,
     danger: css`
-        color: ${(theme) => theme.red}
+        color: ${({theme}) => theme.red}
     `
 }
 

@@ -2,15 +2,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import StyledMessageList, { ChatList } from './style'
-import Filter from 'components/Filter'
-import Select from 'components/Select'
-import Option from 'components/Option'
-import Button from 'components/Button'
-import Icon from 'components/Icon'
-import { ReactComponent as Plus } from 'assets/icons/plus.svg'
-import Input from 'components/Input'
+// 抽离filterList组件
+// import Filter from 'components/Filter'
+// import Select from 'components/Select'
+// import Option from 'components/Option'
+// import Button from 'components/Button'
+// import Icon from 'components/Icon'
+// import { ReactComponent as Plus } from 'assets/icons/plus.svg'
+// import Input from 'components/Input'
 import MessageCard from 'components/MessageCard'
-import avatarImg from 'assets/images/avatar.jpg'
+import avatarImg1 from 'assets/images/avatar-1.jpg'
 import FilterList from 'components/FilterList'
 
 function MessageList ({ children, ...rest }) {
@@ -29,7 +30,7 @@ function MessageList ({ children, ...rest }) {
                         key={index}
                         active={index === 3}
                         replied={index % 3 === 0}
-                        avatarSrc={avatarImg}
+                        avatarSrc={avatarImg1}
                         name='楚中天'
                         avatarStatus='online'
                         StatusText='在线'
