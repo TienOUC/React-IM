@@ -8,6 +8,12 @@ const BlockedAvatar = styled(Avatar)`
     grid-area: avatar;
 `
 
+const BackIcon = styled.label`
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+`
+
 const BlockedName = styled(Text).attrs({ size: 'xlarge' })`
     grid-area: name;
     margin-top: 20px;
@@ -54,4 +60,4 @@ const StyledBlockedList = styled.div`
 `
 
 export default StyledBlockedList
-export { SettingsMenu, BlockedAvatar, BlockedName, CloseIcon, ClosableAvatar, FriendList }
+export { SettingsMenu, BlockedAvatar, BlockedName, CloseIcon, ClosableAvatar, FriendList, BackIcon }

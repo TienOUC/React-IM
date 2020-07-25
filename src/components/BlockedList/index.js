@@ -1,23 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import StyledBlockedList, { SettingsMenu, ClosableAvatar, BlockedAvatar, BlockedName, CloseIcon, FriendList } from './style'
+import StyledBlockedList, { SettingsMenu, ClosableAvatar, BlockedAvatar, BlockedName, CloseIcon, FriendList, BackIcon } from './style'
 import Icon from 'components/Icon'
 import Text from 'components/Text'
 import { ReactComponent as ArrowMenuLeft } from 'assets/icons/arrowMenuLeft.svg'
 import 'styled-components/macro'
 import avatarImg1 from 'assets/images/avatar-1.jpg'
 import { ReactComponent as closeCircle } from 'assets/icons/closeCircle.svg'
+import { useHistory } from 'react-router-dom'
 
 function BlockedList ({ children, ...rest }) {
+    const history = useHistory()
+
     return (
         <StyledBlockedList {...rest}>
             <SettingsMenu>
-                <Icon
-                    icon={ArrowMenuLeft}
-                    css={`
-                        cursor: pointer;
-                    `}
-                />
+                <BackIcon onClick={() => history.goBack()}>
+                    <Icon
+                        icon={ArrowMenuLeft}
+                        style={{ opacity: '0.5' }}
+                    />
+                </BackIcon>
                 <Text size='xlarge'>已屏蔽的好友</Text>
             </SettingsMenu>
             <FriendList>

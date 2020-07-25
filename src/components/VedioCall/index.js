@@ -6,26 +6,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrophone, faCompressAlt, faPhoneSlash, faVolumeMute, faVideo } from '@fortawesome/free-solid-svg-icons'
 import Avatar from 'components/Avatar'
 import Paragraph from 'components/Paragraph'
-import avatarImg from 'assets/images/avatar.jpg'
+import avatarImg1 from 'assets/images/avatar-1.jpg'
 import 'styled-components/macro'
-function VedioCall ({ children, ...rest }) {
+import Text from 'components/Text'
+function VedioCall ({ onHangOffClick, children, ...rest }) {
     const [fullScreen, setFullScreen] = useState(true)
 
     if (!fullScreen) {
         return (
             <VideoCallAlert>
                 <Avatar
-                    src={avatarImg}
+                    src={avatarImg1}
                     css={`
                         grid-area: avatar;
                     `}
                 />
                 <Paragraph
-                    size='medium'
+                    size='normal'
                     css={`
                         grid-area: info;
                     `}
-                >正在跟 Marrlia 进行视频通话</Paragraph>
+                >正在跟<Text bold={'bold'} size={'normal'} style={{ color: '#4f9dde' }}> 林凌 </Text>进行视频通话</Paragraph>
                 <Paragraph
                     type='secondary'
                     css={`
@@ -57,13 +58,13 @@ function VedioCall ({ children, ...rest }) {
                     <FontAwesomeIcon icon={faMicrophone} />
                 </Action>
                 <Action type='hangoff'>
-                    <FontAwesomeIcon icon={faPhoneSlash} />
+                    <FontAwesomeIcon icon={faPhoneSlash} onClick={onHangOffClick} />
                 </Action>
                 <Action>
                     <FontAwesomeIcon icon={faVolumeMute} />
                 </Action>
             </Actions>
-            <Self size='140px' />
+            <Self size='140px' src={avatarImg1} />
 
             {children}
         </StyledVedioCall>

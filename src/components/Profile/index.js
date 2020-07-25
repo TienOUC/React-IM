@@ -21,6 +21,7 @@ import { faPen } from '@fortawesome/free-solid-svg-icons'
 function Profile ({
     showEditBtn,
     showCloseIcon = true,
+    onCloseClick,
     onEdit,
     status,
     children,
@@ -28,7 +29,7 @@ function Profile ({
 }) {
     return (
         <StyledProfile {...rest}>
-            {showCloseIcon && <CloseIcon icon={Cross} />}
+            {showCloseIcon && <CloseIcon icon={Cross} onClick={onCloseClick} />}
             <Avatar
                 css={`
                     margin: 26px 0;
@@ -83,6 +84,7 @@ function Profile ({
                 `}
             >
                 前端小白，努力让自己在前端的路上走更远一些{' '}
+            {/* eslint-disable jsx-a11y/accessible-emoji */}
                 <Emoji label='fist'> ✊ 💪 💯</Emoji>
             </Paragraph>
             <SocialLinks>

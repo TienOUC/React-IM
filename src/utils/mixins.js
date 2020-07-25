@@ -16,6 +16,8 @@ export const activeBar = ({ barWidth = '8px', shadowWidth = '20px' } = {}) => cs
        position: absolute;
        height: 100%;
        left: 0;
+
+       transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
    } 
    &::before{
        width: ${barWidth};
@@ -28,7 +30,7 @@ export const activeBar = ({ barWidth = '8px', shadowWidth = '20px' } = {}) => cs
    }
 `
 
-export const card = (radius = '6px', padding = '20px 30px') => css`
+export const card = (radius = '8px', padding = '20px 30px') => css`
     padding: ${padding};
     background: ${({ theme }) => theme.background};
     box-shadow: 0px 18px 40px 0px rgba(0, 0, 0, .04);    

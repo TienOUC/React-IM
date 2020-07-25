@@ -7,7 +7,7 @@ const Name = styled(Paragraph).attrs({ size: 'large' })`
     grid-area: name;
 `
 
-const Intro = styled(Paragraph).attrs({ size: 'small',type: 'secondary' })`
+const Intro = styled(Paragraph).attrs({ size: 'small', type: 'secondary' })`
     grid-area: intro;
 `
 
@@ -21,6 +21,7 @@ const StyledConcatCard = styled.div`
      ${StyledAvatar}{
          grid-area: avatar;
      }
+     margin: -70px 0;
 `
 
 export default StyledConcatCard

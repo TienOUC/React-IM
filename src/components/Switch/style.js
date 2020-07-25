@@ -44,7 +44,8 @@ const StyledSwitch = styled.label`
    height: 31px;
    position: relative;
    display: inline-block; 
+   cursor: pointer;
 `
 
-export default StyledSwitch 
-export { Slider, Checkbox}
+export default StyledSwitch
+export { Slider, Checkbox }

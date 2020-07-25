@@ -13,8 +13,11 @@ import StyledMessageList, { ChatList } from './style'
 import MessageCard from 'components/MessageCard'
 import avatarImg1 from 'assets/images/avatar-1.jpg'
 import FilterList from 'components/FilterList'
-
+import { animated } from 'react-spring'
+import useStaggeredList from 'hooks/useStaggeredList'
 function MessageList ({ children, ...rest }) {
+    const trailAnimation = useStaggeredList(6)
+
     return (
         <StyledMessageList {...rest}>
             {/* 抽离filterList组件 */}
@@ -26,18 +29,20 @@ function MessageList ({ children, ...rest }) {
             >
                 <ChatList>
                     {[1, 2, 3, 4, 5, 6].map((_, index) => (
-                        <MessageCard
-                            key={index}
-                            active={index === 3}
-                            replied={index % 3 === 0}
-                            avatarSrc={avatarImg1}
-                            name='楚中天'
-                            avatarStatus='online'
-                            StatusText='在线'
-                            time='3 小时之前'
-                            message='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-                            unreadCount={2}
-                        />
+                        <animated.div key={index} style={trailAnimation[index]}>
+                            <MessageCard
+                                key={index}
+                                active={index === 3}
+                                replied={index % 3 === 0}
+                                avatarSrc={avatarImg1}
+                                name='楚中天'
+                                avatarStatus='online'
+                                StatusText='在线'
+                                time='3 小时之前'
+                                message='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+                                unreadCount={2}
+                            />
+                        </animated.div>
                     ))}
                 </ChatList>
             </FilterList>

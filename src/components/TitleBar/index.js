@@ -12,11 +12,21 @@ import { ReactComponent as Options } from 'assets/icons/options.svg'
 import Dropdown from 'components/Dropdown'
 import { DropdownItem } from 'components/Dropdown/style'
 import Seperator from 'components/Seperator'
-
-function TitleBar ({ children, ...rest }) {
+function TitleBar ({
+    onAvatarClick,
+    onVideoClick,
+    titleBarAnimation,
+    style,
+    children,
+    ...rest
+}) {
     return (
-        <StyledTitleBar {...rest}>
-            <Avatar status='online' src={avatarImg2} />
+        <StyledTitleBar style={{ ...style, ...titleBarAnimation}} {...rest}>
+            <Avatar
+                onClick={onAvatarClick}
+                status='online'
+                src={avatarImg2}
+            />
             <Title>
                 <Paragraph size='large'>林凌</Paragraph>
                 <Paragraph type='secondary'>
@@ -25,7 +35,7 @@ function TitleBar ({ children, ...rest }) {
                 </Paragraph>
             </Title>
             <Actions>
-                <Icon opacity={0.5} icon={Call} />
+                <Icon opacity={0.5} icon={Call} onClick={onVideoClick} />
                 <Icon opacity={0.5} icon={Camera} />
                 <Dropdown
                     content={
