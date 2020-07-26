@@ -7,10 +7,11 @@ import Avatar from 'components/Avatar';
 import avatarImg1 from 'assets/images/avatar-1.jpg'
 import { faCommentDots, faUsers, faFolder, faCog, faEllipsisH, faStickyNote } from '@fortawesome/free-solid-svg-icons';
 import 'styled-components/macro'
-import { Link, matchPath, useLocation } from 'react-router-dom'
+import { Link, matchPath, useLocation, Route } from 'react-router-dom'
 
 function NavBar ({ children, ...rest }) {
     return (
+
         <StyledNavBar {...rest}>
             <Avatar src={avatarImg1} status='online' />
             <MenuItems>
@@ -18,8 +19,14 @@ function NavBar ({ children, ...rest }) {
                 <MenuItem to='/contcats' icon={faUsers} />
                 <MenuItem to='/files' icon={faFolder} />
                 <MenuItem to='/notes' icon={faStickyNote} />
-                <MenuItem icon={faEllipsisH} />
-                <MenuItem to='/settings' icon={faCog} css={`align-self: end;`} />
+                <MenuItem to=' ' icon={faEllipsisH} />
+                <MenuItem
+                    to='/settings'
+                    icon={faCog}
+                    css={`
+                        align-self: end;
+                    `}
+                />
             </MenuItems>
         </StyledNavBar>
     )
@@ -36,11 +43,13 @@ function MenuItem ({ to, icon, showBadge, ...rest }) {
 
     return (
         <StyledMenuItem active={active} {...rest}>
-            <Link to={to}>
-                <Badge show={showBadge}>
-                    <MenuIcon active={active} icon={icon} />
-                </Badge>
-            </Link>
+            <Route>
+                <Link to={to}>
+                    <Badge show={showBadge}>
+                        <MenuIcon active={active ? 1 : 0} icon={icon} />
+                    </Badge>
+                </Link>
+            </Route>
         </StyledMenuItem>
     )
 }

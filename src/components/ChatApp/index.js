@@ -14,7 +14,8 @@ import Settings from 'components/Settings'
 import BlockedList from 'components/BlockedList'
 import VedioCall from 'components/VedioCall'
 import { useTransition, animated } from 'react-spring'
-
+import avatarImg1 from 'assets/images/avatar-1.jpg'
+import avatarImg2 from 'assets/images/avatar-2.jpg'
 function ChatApp ({ children, ...rest }) {
     const [showDrawer, setShowDrawer] = useState(false)
     const [videoCalling, setVideoCalling] = useState(false)
@@ -51,7 +52,7 @@ function ChatApp ({ children, ...rest }) {
                                 <NoteList />
                             </Route>
                             <Route path='/settings'>
-                                <EditProfile />
+                                <EditProfile src={avatarImg1} />
                             </Route>
                         </Switch>
                     </animated.div>
@@ -75,7 +76,7 @@ function ChatApp ({ children, ...rest }) {
                 </Switch>
             </Content>
             <Drawer show={showDrawer}>
-                <Profile onCloseClick={() => setShowDrawer(false)} />
+                <Profile src={avatarImg2} name={'林凌'} onCloseClick={() => setShowDrawer(false)} />
             </Drawer>
         </StyledChatApp >
     )

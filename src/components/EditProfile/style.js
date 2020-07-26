@@ -27,7 +27,7 @@ const StyledEditProfile = styled.div`
     display: grid;
     grid-template-areas: 1fr;
     row-gap: 20px;
-    padding: 30px;
+    padding: 55px;
     max-height: 100vh;
     overflow-y: auto;
 `

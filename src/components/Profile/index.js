@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import StyledProfile, { SocialLinks, ContactSection, AlbumSection, AlbumTitle, Album, Photo, CloseIcon } from './style'
 import Avatar from 'components/Avatar'
 import 'styled-components/macro'
-import avatarImg2 from 'assets/images/avatar-2.jpg'
+// import avatarImg2 from 'assets/images/avatar-2.jpg'
 import Paragraph from 'components/Paragraph'
 import Emoji from 'components/Emoji'
 import Icon from 'components/Icon'
@@ -25,6 +25,8 @@ function Profile ({
     onEdit,
     status,
     children,
+    src,
+    name,
     ...rest
 }) {
     return (
@@ -35,7 +37,7 @@ function Profile ({
                     margin: 26px 0;
                     grid-area: 1 / 1 / 3 / 2;
                 `}
-                src={avatarImg2}
+                src={src}
                 size='160px'
                 status={status}
                 statusIconSize='25px'
@@ -66,7 +68,7 @@ function Profile ({
                     margin-bottom: 12px;
                 `}
             >
-                林凌
+                {name}
             </Paragraph>
             <Paragraph
                 size='medium'
@@ -84,7 +86,7 @@ function Profile ({
                 `}
             >
                 前端小白，努力让自己在前端的路上走更远一些{' '}
-            {/* eslint-disable jsx-a11y/accessible-emoji */}
+                {/* eslint-disable jsx-a11y/accessible-emoji */}
                 <Emoji label='fist'> ✊ 💪 💯</Emoji>
             </Paragraph>
             <SocialLinks>
@@ -120,7 +122,7 @@ function Profile ({
             <AlbumSection>
                 <AlbumTitle>
                     <Text type='secondary'>相册（31）</Text>
-                    <a>查看全部</a>
+                    <a href='http://www.baidu.com'>查看全部</a>
                 </AlbumTitle>
                 <Album>
                     <Photo src={paper1} alt='' />

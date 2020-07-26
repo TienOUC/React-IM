@@ -1,4 +1,5 @@
 import React from 'react'
+import   './index.css'
 import './App.css';
 import { ThemeProvider } from 'styled-components';
 import theme from 'theme'

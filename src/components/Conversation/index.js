@@ -46,6 +46,7 @@ function Conversation ({ onAvatarClick, onVideoClick, children, ...rest }) {
                 </ChatBubble>
                 <MyChatBubble time='昨天 下午14:42'>
                     本来是一个，改着改着多了4个，脑壳疼～
+                     {/* eslint-disable jsx-a11y/accessible-emoji */}
                      <Emoji label='smile'> 😂😂😂 </Emoji>
                 </MyChatBubble>
             </Conversations>

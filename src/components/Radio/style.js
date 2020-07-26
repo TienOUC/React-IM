@@ -2,6 +2,7 @@
 import styled from 'styled-components'
 
 const Circle = styled.span`
+    box-sizing: content-box;
     line-height: 16px;
     width: 16px;
     height: 16px;

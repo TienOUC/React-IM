@@ -24,7 +24,7 @@ function Footer ({
     const theme = useTheme()
 
     return (
-        <StyledFooter style={{ ...style, ...footerAnimation}} {...rest}>
+        <StyledFooter style={{ ...style, ...footerAnimation }} {...rest}>
             <Input
                 placeholder='请输入想和对方说的话'
                 prefix={<Icon icon={ClipIcon} />}
@@ -39,9 +39,10 @@ function Footer ({
                             <Icon
                                 icon={SmileIcon}
                                 color={emojiIconActive ? undefined : theme.gray3}
+                                style={{ cursor: 'pointer' }}
                             />
                         </Popover>
-                        <Icon icon={MicrphoneIcon} />
+                        <Icon icon={MicrphoneIcon} style={{ cursor: 'pointer' }} />
                         <Button size='42px'>
                             <Icon
                                 icon={PlaneIcon}

@@ -7,6 +7,7 @@ import { faMicrophone, faCompressAlt, faPhoneSlash, faVolumeMute, faVideo } from
 import Avatar from 'components/Avatar'
 import Paragraph from 'components/Paragraph'
 import avatarImg1 from 'assets/images/avatar-1.jpg'
+import avatarImg2 from 'assets/images/avatar-2.jpg'
 import 'styled-components/macro'
 import Text from 'components/Text'
 function VedioCall ({ onHangOffClick, children, ...rest }) {
@@ -16,7 +17,7 @@ function VedioCall ({ onHangOffClick, children, ...rest }) {
         return (
             <VideoCallAlert>
                 <Avatar
-                    src={avatarImg1}
+                    src={avatarImg2}
                     css={`
                         grid-area: avatar;
                     `}

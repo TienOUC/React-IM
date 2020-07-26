@@ -39,6 +39,7 @@ const AvatarClip = styled.div`
     height: ${({ size }) => size};
     border-radius: 50%;
     overflow: hidden;
+    background-color: ${({ theme }) => theme.gray};
 `
 
 const AvatarImage = styled.img`

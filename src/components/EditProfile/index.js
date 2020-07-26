@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import StyledEditProfile, { GroupTitle, GenderAndRegion, SelectGroup, StyledIconInput } from './style'
 import Profile from 'components/Profile'
 import Avatar from 'components/Avatar'
-import avatarImg1 from 'assets/images/avatar-1.jpg'
+// import avatarImg1 from 'assets/images/avatar-1.jpg'
 import Button from 'components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
@@ -17,7 +17,7 @@ import Option from 'components/Option'
 import Icon from 'components/Icon'
 
 
-function EditProfile ({ children, ...rest }) {
+function EditProfile ({ children, src, ...rest }) {
     const [showEdit, setShowEdit] = useState(false)
 
     if (!showEdit) {
@@ -26,13 +26,14 @@ function EditProfile ({ children, ...rest }) {
                 onEdit={() => setShowEdit(true)}
                 showEditBtn
                 showCloseIcon={false}
+                src={src}
             />
         )
     }
     return (
         <StyledEditProfile {...rest}>
             <Avatar
-                src={avatarImg1}
+                src={src}
                 size='160px'
                 css={`
                     grid-area: 1 / 1 / 3 / 2; 
@@ -46,11 +47,12 @@ function EditProfile ({ children, ...rest }) {
                     grid-area: 1 / 1 / 3 / 2;
                     justify-self: center;
                     align-self: end;
+                    margin-top: 136px;
                     margin-left: 100px;
                     z-index: 10;
                 `}
             >
-                <FontAwesomeIcon icon={faCheck} onClick={() => setShowEdit(false)} />
+                <FontAwesomeIcon icon={faCheck} style={{transform: 'scale(2)'}} onClick={() => setShowEdit(false)} />
             </Button>
 
             <GroupTitle>基本信息</GroupTitle>
@@ -93,7 +95,7 @@ function IconInput ({ icon, bgColor, ...rest }) {
     return (
         <StyledIconInput>
             <Icon.Social icon={icon} bgColor={bgColor} />
-            <InputText  {...rest}/>
+            <InputText  {...rest} />
         </StyledIconInput>
     )
 }
