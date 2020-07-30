@@ -39,14 +39,14 @@ function MenuItem ({ to, icon, showBadge, ...rest }) {
     const active = !!matchPath(location.pathname, {
         path: to,
         exact: to === '/'
-    })
+    }) ? 1 : 0
 
     return (
         <StyledMenuItem active={active} {...rest}>
             <Route>
                 <Link to={to}>
                     <Badge show={showBadge}>
-                        <MenuIcon active={active ? 1 : 0} icon={icon} />
+                        <MenuIcon active={active} icon={icon} />
                     </Badge>
                 </Link>
             </Route>
