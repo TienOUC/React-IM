@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.86b25147.chunk.css",
-    "main.js": "./static/js/main.91d1881e.chunk.js",
-    "main.js.map": "./static/js/main.91d1881e.chunk.js.map",
+    "main.js": "./static/js/main.bcb3058a.chunk.js",
+    "main.js.map": "./static/js/main.bcb3058a.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.a58ab876.js",
     "runtime-main.js.map": "./static/js/runtime-main.a58ab876.js.map",
     "static/js/2.ff90a61b.chunk.js": "./static/js/2.ff90a61b.chunk.js",
     "static/js/2.ff90a61b.chunk.js.map": "./static/js/2.ff90a61b.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.d6521959f1ad94f6c418e1720af821b1.js": "./precache-manifest.d6521959f1ad94f6c418e1720af821b1.js",
+    "precache-manifest.5265212ce5d13894a2a7093a770da6fc.js": "./precache-manifest.5265212ce5d13894a2a7093a770da6fc.js",
     "service-worker.js": "./service-worker.js",
     "static/css/main.86b25147.chunk.css.map": "./static/css/main.86b25147.chunk.css.map",
     "static/js/2.ff90a61b.chunk.js.LICENSE.txt": "./static/js/2.ff90a61b.chunk.js.LICENSE.txt",
@@ -30,10 +30,10 @@
     "static/media/fileZip.90ab8d28.svg": "./static/media/fileZip.90ab8d28.svg",
     "static/media/microphone.508a3b58.svg": "./static/media/microphone.508a3b58.svg",
     "static/media/options.916456f1.svg": "./static/media/options.916456f1.svg",
-    "static/media/paper-1.jpg": "./static/media/paper-1.3e456138.jpg",
-    "static/media/paper-2.jpg": "./static/media/paper-2.f2f511da.jpg",
-    "static/media/paper-3.jpg": "./static/media/paper-3.41af7d85.jpg",
-    "static/media/paper-7.jpg": "./static/media/paper-7.5c5ed7fa.jpg",
+    "static/media/paper-1.jpg": "./static/media/paper-1.683e3b5e.jpg",
+    "static/media/paper-2.jpg": "./static/media/paper-2.84240801.jpg",
+    "static/media/paper-3.jpg": "./static/media/paper-3.d0f5c377.jpg",
+    "static/media/paper-7.jpg": "./static/media/paper-7.14ac0319.jpg",
     "static/media/plane.d73b324f.svg": "./static/media/plane.d73b324f.svg",
     "static/media/play.2f569773.svg": "./static/media/play.2f569773.svg",
     "static/media/plus.a5bf319c.svg": "./static/media/plus.a5bf319c.svg",
@@ -46,6 +46,6 @@
     "static/js/runtime-main.a58ab876.js",
     "static/js/2.ff90a61b.chunk.js",
     "static/css/main.86b25147.chunk.css",
-    "static/js/main.91d1881e.chunk.js"
+    "static/js/main.bcb3058a.chunk.js"
   ]
 }
