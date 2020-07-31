@@ -35,8 +35,8 @@ function TitleBar ({
                 </Paragraph>
             </Title>
             <Actions>
-                <Icon opacity={0.5} icon={Call} onClick={onVideoClick} />
-                <Icon opacity={0.5} icon={Camera} />
+                <Icon opacity={0.5} icon={Call} />
+                <Icon opacity={0.5} icon={Camera} onClick={onVideoClick} />
                 <Dropdown
                     content={
                         <>

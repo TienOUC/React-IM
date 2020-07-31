@@ -4,7 +4,8 @@ import './App.css';
 import { ThemeProvider } from 'styled-components';
 import theme from 'theme'
 import ChatApp from 'components/ChatApp';
-import { BrowserRouter as Router } from 'react-router-dom'
+// import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 
 function App () {
   return (
